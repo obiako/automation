@@ -1,0 +1,26 @@
+{
+    "name": "obiako/automation",
+    "description": "A package to extend the pecl extension\u0000s Redis class (version up to 5.3.7)",
+    "type": "library",
+    "require": {
+       
+    },
+    "authors": [
+        {
+            "name": "Tobe Obiakor",
+            "email": "obiakotobe@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Obiako\\Automation\\": "src"
+        },
+        "files": [
+            "src/helpers.php"
+        ]
+    },
+    "suggest": {
+        "ext-redis": "Required to use the phpredis connector (^4.0|^5.0)."
+
+    }
+}
