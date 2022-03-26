@@ -11,7 +11,7 @@ class Automation extends Redis
     {
         $this->connect($host, $port , $timeout, $reserved , $retry_interval, $read_timeout);
         if($store_calling_class==true){
-            $this->setOption('calling_class',$this->get_calling_class());
+            $this->setOption(self::OPT_PREFIX,'calling_class:'.$this->get_calling_class());
         }
 
 
@@ -31,5 +31,13 @@ class Automation extends Redis
              if ( $class != $trace[$i]['class'] ) // is it a different class
                  return $trace[$i]['class'];
     }
-}
+
+
+
+    }
+
+    public function show_calling_class()
+    {
+        return $this->getOption(self::OPT_PREFIX);
+    }
 }
