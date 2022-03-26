@@ -3,7 +3,7 @@
     "description": "A package to extend the pecl extension\u0000s Redis class (version up to 5.3.7)",
     "type": "library",
     "require": {
-       
+        "ext-redis": "*"
     },
     "authors": [
         {
