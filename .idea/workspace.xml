@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="afba009a-45ce-413c-992d-b4dbd49b860d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Automation.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Automation.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -56,7 +57,7 @@
       <workItem from="1648254449442" duration="1804000" />
       <workItem from="1648260176050" duration="591000" />
       <workItem from="1648277238497" duration="268000" />
-      <workItem from="1648277852326" duration="606000" />
+      <workItem from="1648277852326" duration="2492000" />
     </task>
     <servers />
   </component>
