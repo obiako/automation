@@ -12,6 +12,8 @@ class Automation extends Redis
         $this->connect($host, $port , $timeout, $reserved , $retry_interval, $read_timeout);
         if($store_calling_class==true){
             $this->setOption(self::OPT_PREFIX,'calling_class:'.$this->get_calling_class());
+        }else{
+            $this->setOption(self::OPT_PREFIX,'calling_class: This feature is disabled. Please enable to see the class.');
         }
 
 
