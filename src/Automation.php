@@ -9,12 +9,13 @@ class Automation extends Redis
     public $config=[];
     public function __construct($host, $port = 6379, $timeout = 0.0, $reserved = null, $retry_interval = 0, $read_timeout = 0.0,$store_calling_class=false)
     {
+        $this->connect($host, $port , $timeout, $reserved , $retry_interval, $read_timeout);
         if($store_calling_class==true){
-            $this->setOption(Redis::OPT_PREFIX, 'calling_class:'.$this->get_calling_class());
+            $this->setOption('calling_class',$this->get_calling_class());
         }
 
 
-       $this->connect($host, $port , $timeout, $reserved , $retry_interval, $read_timeout);
+
     }
     public function get_calling_class() {
 
