@@ -2,15 +2,15 @@
 
 namespace Obiako\Automation;
 
-//use Redis;
+use Redis;
 
-class Automation extends \Redis
+class Automation extends Redis
 {
     public $config=[];
     public function __construct($host, $port = 6379, $timeout = 0.0, $reserved = null, $retry_interval = 0, $read_timeout = 0.0,$store_calling_class=false)
     {
         if($store_calling_class==true){
-            $this->setOpt(\Redis::OPT_PREFIX, 'calling_class:'.$this->get_calling_class());
+            $this->setOption(Redis::OPT_PREFIX, 'calling_class:'.$this->get_calling_class());
         }
 
 
